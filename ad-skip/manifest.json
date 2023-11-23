@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Auto Skip Ads",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Skips YouTube ads that pop-up (w/ skip after 5 seconds option).",
     "permissions": ["tabs"], 
     "content_scripts": [
