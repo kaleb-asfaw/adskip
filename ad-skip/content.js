@@ -1,3 +1,5 @@
+let wasAdPlaying = false
+
 function isAdUnskippable(){
   return !!document.querySelector(".ytp-ad-preview, .ytp-ad-preview-slot")
 }
@@ -22,6 +24,7 @@ function clickSkipAdButton() {
       videoElement.muted = false;
     }
   }
+
   const checkInterval = 1000; // every 1000ms, a check will occur
   function isAdPlaying() {
     return !!document.querySelector('.ytp-ad-preview, .ytp-ad-preview-slot');
@@ -34,10 +37,12 @@ function clickSkipAdButton() {
     if (skipButton){
       clickSkipAdButton();
       wasAdPlaying = true;
-    } else if (adCurrenlyPlaying || isAdUnskippable()){
+
+    } else if (adCurrentlyPlaying || isAdUnskippable()){
       accelerate();
       wasAdPlaying = true;
-    } else if (wasAdPlaying && !adCurrenlyPlaying) { 
+
+    } else if (wasAdPlaying && !adCurrentlyPlaying) { 
       restoreNormal();
       wasAdPlaying = false;
     }
