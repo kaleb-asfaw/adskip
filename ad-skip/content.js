@@ -32,7 +32,7 @@ function clickSkipAdButton() {
 
   const adSkipChecker = setInterval(() => {
     const skipButton = document.querySelector(".ytp-ad-skip-button, .ytp-ad-overlay-close-button, .ytp-ad-skip-button-slot");
-    const adCurrentlyPlaying = isAdPlaying();
+    const adCurrentlyPlaying = isAdPlaying()
 
     if (skipButton){
       clickSkipAdButton();
