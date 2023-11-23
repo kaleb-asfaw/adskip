@@ -1,5 +1,5 @@
 function clickSkipAdButton() {
-    const skipButton = document.querySelector(".ytp-ad-skip-button");
+    const skipButton = document.querySelector(".ytp-ad-skip-button, .ytp-ad-overlay-close-button, .ytp-ad-skip-button-slot");
     if (skipButton) {
       skipButton.click();
     }
@@ -10,4 +10,3 @@ function clickSkipAdButton() {
   const adSkipChecker = setInterval(() => {
     clickSkipAdButton();
  }, checkInterval);
-  
