@@ -1,5 +1,5 @@
 function clickSkipAdButton() {
-    const skipButton = document.querySelector(".ytp-ad-skip-button, .ytp-ad-overlay-close-button, .ytp-ad-skip-button-slot");
+    const skipButton = document.querySelector(".ytp-ad-skip-button, .ytp-ad-overlay-close-button, .ytp-ad-skip-button-slot"); // patch for the Chrome 120 Beta update
     if (skipButton) {
       skipButton.click();
     }
